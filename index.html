@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<style type="text/css">
+		body {
+            background-image: url(2.jpg);
+            background-size: cover;
+        }
+        @font-face {
+            font-family: kolya;
+            src: url(fortnitebattlefest.ttf);
+        }
+        .img1 {
+            width: 50px;
+            position: absolute;
+        }
+        .img2 {
+            width: 50px;
+            position: absolute;
+        }
+	</style>
+</head>
+<body>
+      <div class="col-2 mx-auto text-center text-white">
+        <h1 class="fw-light">Мои очки <span class="bullet">0</span></h1>
+     </div>
+     <h1 class="text-white text1 fw-light">стрелки часов</h1>
+     <h1 class="text-white text2 fw-light">свеча</h1>
+     <h1 class="text-white text3 fw-light">ключ</h1>
+     <img src="1.png" class="img1" style="margin-left: 900px; margin-top:450px;">
+     <img src="2.png" class="img2" style="margin-left: 440px;margin-top: 343px;">
+     <img src="3.png" class="img3" style="margin-left: 1000px;height: 50px;margin-top: 470px;">
+    <script type="text/javascript">
+    let ammo = 0; //переменная для патронов
+
+    document.querySelector('.img1').onclick = function() {
+        document.querySelector('.img1').style.display = "none"
+        ammo = ammo + 1;
+        document.querySelector('.bullet').innerHTML = ammo;
+        document.querySelector('.text1').style.textDecoration = "line-through"
+    }
+    document.querySelector('.img2').onclick = function() {
+        document.querySelector('.img2').style.display = "none"
+        ammo = ammo + 1;
+        document.querySelector('.bullet').innerHTML = ammo;
+        document.querySelector('.text2').style.textDecoration = "line-through"
+    }
+     document.querySelector('.img3').onclick = function() {
+        document.querySelector('.img3').style.display = "none"
+        ammo = ammo + 1;
+        document.querySelector('.bullet').innerHTML = ammo;
+        document.querySelector('.text3').style.textDecoration = "line-through"
+    }
+</script>
+</body>
+</html>
